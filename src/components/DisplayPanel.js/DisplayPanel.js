@@ -16,7 +16,6 @@ export default function DisplayPanel() {
   };
   const handleCompress = () => {
     setLoading(true);
-    
   };
   return (
     <div>
@@ -29,10 +28,10 @@ export default function DisplayPanel() {
           type="file"
         />
       </Button>
-      <div className="image-container flex" onClick={(e) => e.preventDefault()}>
+      <div className="image-container" onClick={(e) => e.preventDefault()}>
         {file && (
           <>
-            <img src={file} width="600" height="500" />
+            <img src={file} className="image-dimension"/>
             <div className="child-image">
               Compression rate:{" "}
               <Slider
