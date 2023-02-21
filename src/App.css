@@ -16,3 +16,14 @@ h2{
   margin-top: 10px;
   height: 100vh;
 }
+.image-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.child-image{
+  padding: 20px;
+}
+.m-left-10{
+  margin-left: 10px !important;
+}
