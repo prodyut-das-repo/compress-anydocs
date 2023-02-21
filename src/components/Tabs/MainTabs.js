@@ -5,9 +5,9 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import TabPanel from "../TabPanels/TabPanel";
 import DisplayPanel from "../DisplayPanel.js/DisplayPanel";
-import ImageIcon from '@mui/icons-material/Image';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import ArticleIcon from '@mui/icons-material/Article';
+import ImageIcon from "@mui/icons-material/Image";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import ArticleIcon from "@mui/icons-material/Article";
 
 const AntTabs = styled(Tabs)({
   borderBottom: "1px solid #e8e8e8",
@@ -100,9 +100,17 @@ export default function CustomizedTabs() {
         onChange={handleChange}
         aria-label="styled tabs example"
       >
-        <StyledTab label="Images" icon={<ImageIcon/>} iconPosition="start"/>
-        <StyledTab label="PDFs" icon={<PictureAsPdfIcon/>} iconPosition="start"/>
-        <StyledTab label="Office Files" icon={<ArticleIcon/>} iconPosition="start"/>
+        <StyledTab label="Images" icon={<ImageIcon />} iconPosition="start" />
+        <StyledTab
+          label="PDFs"
+          icon={<PictureAsPdfIcon />}
+          iconPosition="start"
+        />
+        <StyledTab
+          label="Office Files"
+          icon={<ArticleIcon />}
+          iconPosition="start"
+        />
       </StyledTabs>
       <TabPanel value={value} index={0}>
         <DisplayPanel />
